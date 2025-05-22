@@ -1,0 +1,253 @@
+.navbar {
+  background-color: #1976d9;
+  padding: 1rem;
+  color:white;
+  margin-bottom: 20px;
+}
+
+.navbar h1{
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.list-wrapper{
+  width:100%;
+  margin: auto 0;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.ProductFormContainer{ 
+  padding: 1rem;
+  border: 1px solid black;
+  width: 40%;
+  margin: 10px;
+}
+
+
+.ProductListContainer{ 
+  padding: 1rem;
+  margin: 10px;
+  width:60%;
+}
+
+.search-bar{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-input{
+  flex-grow: 1;
+  padding:0.5rem;
+  border: 1px solid #ccc;
+}
+
+.sort-select{
+  padding:0.5rem;
+  border:1px solid #ccc;
+  min-width: 120px;
+}
+
+.product-list{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+.product-item{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding:1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.2s;
+}
+
+.product-item:hover {
+background-color: #f5f5f5;
+}
+
+.product-image{
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.product-details{
+  flex-grow: 1
+}
+
+.product-name{
+  margin:0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.product-price{
+  color:#1976d2;
+  font-weight: 500;
+  margin: 0.25rem 0;
+}
+
+
+.product-description{
+  color: #666;
+  margin: 0;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  width: 15rem;
+}
+
+.delete-button{
+  background: none;
+  border:none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: relative;
+  border-radius: 14px;
+  right: 15px;
+  bottom: 15px;
+  position: absolute;
+}
+
+.delete-button:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.add-button{
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  height: 50px;
+  width: 150px;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.add-button:hover{
+  background-color: #1565c0;
+}
+
+
+.modal-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal{
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem;
+}
+
+.modal-title{
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.form-field{
+  margin-bottom: 1.25rem;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-label{
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-input{
+  padding: 0.5rem;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  width: 90%;
+}
+
+.form-input.error{
+  border-color: red;
+}
+
+.error-text{
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.form-buttons{
+  display:flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  gap:1rem;
+}
+
+.button{
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.button-primary{
+  background-color: #1976d2;
+  color: white;
+}
+
+.button-secondary{
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.button:hover{
+  opacity: 0,9;
+}
+
+.pagination{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.page-button{
+  background-color: #ccc;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+}
+
+
+.page-button:hover{
+  background-color: #d5d3d3;
+}
